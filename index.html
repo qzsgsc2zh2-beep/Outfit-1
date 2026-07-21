@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <style>
+    body { margin: 0; }
+    model-viewer { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="outfit1.glb"
+    ios-src="outfit1.usdz"
+    alt="Mein Outfit"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    auto-rotate
+    exposure="1.0"
+    tone-mapping="neutral"
+    environment-image="neutral"
+    shadow-intensity="1">
+    <button slot="ar-button" style="background-color:white; border-radius:8px; border:none; padding:12px 20px; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); font-size:14px;">
+      👉 In AR ansehen
+    </button>
+  </model-viewer>
+</body>
+</html>
